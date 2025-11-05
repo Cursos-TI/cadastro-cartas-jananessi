@@ -8,7 +8,7 @@
 int main() {
     setbuf(stdin, NULL); // limpa o buffer padrão
     char estado;
-    int codigo;
+    char codigo[03];
     char cidade[50];
     int populacao;
     float area;
@@ -23,7 +23,7 @@ int main() {
     scanf(" %c", &estado);
 
     printf("Digite o código composto por a letra do estado e um número de 01 a 04: \n");
-    scanf(" %i", &codigo);
+    scanf(" %s", &codigo);
 
     printf("Digite o nome da cidade: \n");
     scanf(" %s", cidade);
@@ -50,7 +50,7 @@ int main() {
     scanf(" %c", &estado);
 
     printf("Digite o código composto por a letra do estado e um número de 01 a 04: \n");
-    scanf(" %i", &codigo);
+    scanf(" %s", &codigo);
 
     printf("Digite o nome da cidade: \n");
     scanf(" %s", cidade);
